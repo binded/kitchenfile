@@ -14,6 +14,8 @@ const file = kitchenfile(`${__dirname}/files`)
 file('image.jpg').rs() // returns a readable stream
 file('image.jpg').buf // returns a buffer
 file('image.jpg').path // path to image.jpg
+file('image.jpg').contentType // content type based on file ext (e.g.  image/jpg)
+file('image.jpg').size // file size in bytes
 ```
 
 ## Install
