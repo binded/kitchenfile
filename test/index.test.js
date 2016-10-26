@@ -11,6 +11,7 @@ test((t) => {
   t.equal(file('somefile.txt').path, join(__dirname, 'files', 'somefile.txt'))
   t.equal(file('somefile.txt').contentType, 'text/plain')
   t.equal(file('somefile.txt').size, 'just some file for testing!\n'.length)
+  t.equal(file('somefile.txt').filename, 'somefile.txt')
   file('somefile.txt').rs().pipe(concat((buf) => {
     t.equal(buf.toString(), 'just some file for testing!\n')
     t.end()
