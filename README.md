@@ -16,6 +16,7 @@ file('image.jpg').buf // returns a buffer
 file('image.jpg').path // path to image.jpg
 file('image.jpg').contentType // content type based on file ext (e.g.  image/jpg)
 file('image.jpg').size // file size in bytes
+file('image.jpg').filename // => image.jpg
 ```
 
 ## Install
